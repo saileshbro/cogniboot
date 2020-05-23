@@ -3,9 +3,8 @@ import 'dart:math';
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:state_management_intro/demobloc/models/articles_response_model.dart';
-import 'package:state_management_intro/demobloc/repositories/article_repository.dart';
-
+import 'package:state_management_intro/models/articles_response_model.dart';
+import 'package:state_management_intro/repositories/article_repository.dart';
 part 'all_articles_event.dart';
 part 'all_articles_state.dart';
 

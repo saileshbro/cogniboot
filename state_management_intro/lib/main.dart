@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_management_intro/demobloc/all_articles/all_articles_bloc.dart';
-import 'package:state_management_intro/demobloc/ui/all_articles_view.dart';
+import 'package:state_management_intro/ui/all_articles_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
       home: BlocProvider<AllArticlesBloc>(
         create: (BuildContext context) =>
             AllArticlesBloc()..add(GetAllArticlesEvent()),
+        // For BLoC example
         child: AllArticlesView(),
+        // For InheritedWidgetExample
+        // child: const ColorChangeView(),
       ),
     );
   }
